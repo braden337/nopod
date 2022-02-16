@@ -7,11 +7,16 @@ const path = require("path");
 const os = require("os");
 const fs = require("fs");
 const port = 80;
-const ip = os
-  .networkInterfaces()
-  ["en0"].filter((x) => x.family == "IPv4")[0].address;
+// const ip = os
+//   .networkInterfaces()
+//   ["en0"].filter((x) => x.family == "IPv4")[0].address;
 
-const url = `http://${process.argv[2] || ip}`;
+if (process.argv.length < 3) {
+  console.log("usage: nopod <HOSTNAME>");
+  process.exit(1);
+}
+
+const url = `http://${process.argv[2] || ""}`;
 
 const app = express();
 app.set("view engine", "pug");
