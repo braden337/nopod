@@ -1,0 +1,14 @@
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/style.css")
+    link(rel="alternate" type="application/rss+xml" href="/feed" title=podTitle)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  body
+    h1= title
+    ul
+      each file in files
+        li
+          a(href=`/${file}`)= file
+    h3
+      a(href='/feed') RSS Feed

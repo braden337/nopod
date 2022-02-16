@@ -1,0 +1,29 @@
+{
+  "name": "nopod",
+  "version": "1.0.0",
+  "description": "A local podcast server",
+  "bin": {
+    "nopod": "nopod.js"
+  },
+  "scripts": {
+    "start": "node nopod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braden337/nopod.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/braden337/nopod/issues"
+  },
+  "homepage": "https://github.com/braden337/nopod#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "inquirer": "^8.2.0",
+    "podcast": "^2.0.0",
+    "pug": "^3.0.2",
+    "qrcode-terminal": "^0.12.0",
+    "yaml": "^1.10.2"
+  }
+}

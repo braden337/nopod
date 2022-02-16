@@ -1,0 +1,24 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: palegreen;
+  color: palevioletred;
+  font-size: 1.5rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+a:visited {
+  color: palevioletred;
+}
+
+a:hover {
+  color: rebeccapurple;
+  text-decoration: underline;
+}
